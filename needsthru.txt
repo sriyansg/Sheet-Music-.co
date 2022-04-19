@@ -1,0 +1,7 @@
+// Always needed for Vex Flow
+
+const { Renderer, Stave } = Vex.Flow;
+const div = document.getElementById("output")
+const renderer = new Renderer(div, Renderer.Backends.SVG);
+renderer.resize(500, 250);
+const context = renderer.getContext();
